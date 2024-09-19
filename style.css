@@ -26,3 +26,33 @@ nav a {
 #donate_link {
   color: black;
 }
+
+/* Landing Page */
+/* Leading */
+.leading {
+  height: 100vh;
+  background: url(images/happy_children.jpg) rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.leading h1 {
+  font-size: 60px;
+}
+
+.leading p {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.leading a {
+  padding: 6px 20px;
+  background-color: #f3cbf2;
+  border-radius: 6px;
+  width: fit-content;
+}
