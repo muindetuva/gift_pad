@@ -30,9 +30,10 @@ nav a {
 /* Landing Page */
 /* Leading */
 .leading {
-  height: 100vh;
+  height: calc(100vh - 60px);
   background: url(images/happy_children.jpg) rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
+  background-size: cover;
   color: white;
   font-weight: bold;
   display: flex;
@@ -55,4 +56,77 @@ nav a {
   background-color: #f3cbf2;
   border-radius: 6px;
   width: fit-content;
+}
+
+/* Our Work Section */
+.work {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.work h1 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.work_cards_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work_card {
+  width: 200px;
+  background-color: #d9d9d9;
+  margin: 10px;
+}
+
+.work_card img {
+  width: 100%;
+}
+
+.work_card div {
+  padding: 10px;
+}
+
+.work_card_title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.work_card_description {
+  font-size: small;
+}
+
+/* Our Stories */
+.stories {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.stories_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stories h1 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.story_card {
+  width: 200px;
+  background-color: #d9d9d9;
+  margin: 10px;
+}
+
+.story_card img {
+  width: 100%;
+}
+
+.story_card p {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
