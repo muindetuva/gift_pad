@@ -1,3 +1,9 @@
+/* Global Styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 /* Navigation */
 nav {
   background-color: #f3cbf2;
@@ -43,7 +49,7 @@ nav a {
 }
 
 .leading h1 {
-  font-size: 60px;
+  font-size: 10vmin;
 }
 
 .leading p {
@@ -119,6 +125,7 @@ nav a {
   width: 200px;
   background-color: #d9d9d9;
   margin: 10px;
+  position: relative;
 }
 
 .story_card img {
@@ -129,4 +136,78 @@ nav a {
   padding: 10px;
   text-align: center;
   font-weight: bold;
+}
+
+/* Footer */
+footer {
+  height: 50px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story_card .play {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  right: 80px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Mobile Styles */
+/* Navigation */
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .leading {
+    text-align: center;
+    padding-left: 0;
+    align-items: center;
+    background-position: center center;
+  }
+
+  .leading p {
+    display: none;
+  }
+
+  .leading a {
+    margin-top: 60px;
+    width: 50%;
+    height: 30px;
+    font-size: 26px;
+  }
+
+  .work h1,
+  .stories h1 {
+    text-align: center;
+  }
+
+  .work_cards_container,
+  .stories_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
 }
