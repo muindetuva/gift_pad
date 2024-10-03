@@ -161,7 +161,7 @@ footer {
 
 /* Mobile Styles */
 /* Navigation */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 14px;
   }
@@ -210,4 +210,27 @@ footer {
   footer {
     margin-top: 50px;
   }
+}
+
+.mobile_nav {
+  /* height: 200px; */
+  background-color: #f3cbf2;
+  padding: 0 20px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.mobile_nav a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 20px 0;
+  color: white;
+}
+
+.close {
+  display: none;
 }
